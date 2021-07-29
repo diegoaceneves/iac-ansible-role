@@ -1,0 +1,6 @@
+---
+# vars file for iac_ansible_role
+packages:
+- apache2
+- git
+

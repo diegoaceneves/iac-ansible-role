@@ -1,0 +1,5 @@
+---
+# tasks file for iac_ansible_role
+
+- include: install.yml
+- include: deploy-app.yml
