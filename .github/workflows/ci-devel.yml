@@ -8,7 +8,7 @@ jobs:
   linter:
     strategy:
       matrix:
-        python-version: [3.7, 3.8, 3.9]
+        python-version: [3.9]
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -23,6 +23,21 @@ jobs:
       - name: Running ansible linter
         run:
           ansible-lint
+  molecule:
+    strategy:
+      matrix:
+        python-version: [3.9]
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Installing depedencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
       - name: Running molecule test
         run:
           molecule test
