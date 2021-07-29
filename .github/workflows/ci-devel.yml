@@ -1,8 +1,8 @@
 ---
-name: CI
+name: CI Devel
 on:
   push:
-    branches: [ main ]
+    branches: [ devel ]
   pull_request:
 jobs:
   linter:
