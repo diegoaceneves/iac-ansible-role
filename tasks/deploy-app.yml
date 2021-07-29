@@ -1,0 +1,28 @@
+---
+
+- name: Test Site is deployed
+  stat:
+    path: "{{ SITEPATH }}/css/site.css"
+  register: site_deployed  
+
+
+- name: Removing Original Path
+  file:
+    path: "{{ SITEPATH }}"
+    state: absent
+  when: not site_deployed.stat.exists
+
+- name: Cloning Repo
+  git:
+    repo: "{{ GITREPO }}"
+    dest: "{{ SITEPATH }}"
+    version: "{{ GITVERSION }}"
+  when: not site_deployed.stat.exists
+
+- name: Correct Permissions
+  file:
+    path: "{{ SITEPATH }}"
+    owner: "{{ HTTPUSER }}"
+    group: "{{ HTTPGROUP }}"
+    recurse: yes
+  when: not site_deployed.stat.exists

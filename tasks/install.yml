@@ -1,0 +1,9 @@
+- name: Update Packages
+  apt:
+    upgrade: dist
+    update_cache: yes
+
+- name: Install WebServer
+  apt:
+    name: "{{packages}}"
+    state: present

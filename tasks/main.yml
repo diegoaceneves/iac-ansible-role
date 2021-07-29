@@ -1,0 +1,5 @@
+---
+# tasks file for web-server
+
+- include: install.yml
+- include: deploy-app.yml
