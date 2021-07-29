@@ -23,4 +23,6 @@ jobs:
       - name: Running ansible linter
         run:
           ansible-lint
+      - name: Running molecule test
+        run:
           molecule test
