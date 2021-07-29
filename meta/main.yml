@@ -13,8 +13,8 @@ galaxy_info:
     - focal
 
   galaxy_tags:
-  - "Ubuntu"
-  - "Focal"
-  - "Apache2"
+  - "ubuntu"
+  - "focal"
+  - "apache2"
 
 dependencies: []

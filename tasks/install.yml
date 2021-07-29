@@ -5,5 +5,5 @@
 
 - name: Install WebServer
   apt:
-    name: "{{packages}}"
+    name: "{{ packages }}"
     state: present
