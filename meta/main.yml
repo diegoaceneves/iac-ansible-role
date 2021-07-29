@@ -1,6 +1,7 @@
 galaxy_info:
+  role_name: iac_ansible_role  
   author: Diego Neves
-  description: Simple Ansible Role to install Apache2 
+  description: Simple Ansible Role to install Apache2
   company: Diego Neves
 
   license: MIT

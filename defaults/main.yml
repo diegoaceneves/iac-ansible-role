@@ -1,5 +1,5 @@
 ---
-# defaults file for web-server
+# defaults file for iac_ansible_role
 GITREPO: https://github.com/diegoaceneves/iac-software.git 
 SITEPATH: /var/www/html
 HTTPUSER: www-data

@@ -1,5 +1,5 @@
 ---
-# vars file for web-server
+# vars file for iac_ansible_role
 packages:
 - apache2
 - git

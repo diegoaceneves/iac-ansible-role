@@ -3,7 +3,7 @@
 - name: Test Site is deployed
   stat:
     path: "{{ SITEPATH }}/css/site.css"
-  register: site_deployed  
+  register: site_deployed
 
 
 - name: Removing Original Path
