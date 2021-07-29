@@ -1,0 +1,6 @@
+---
+# vars file for web-server
+packages:
+- apache2
+- git
+
