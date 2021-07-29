@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Diego Neves
+  description: Simple Ansible Role to install Apache2 
+  company: Diego Neves
+
+  license: MIT
+
+  min_ansible_version: 2.10.7
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - focal
+
+  galaxy_tags:
+  - "Ubuntu"
+  - "Focal"
+  - "Apache2"
+
+dependencies: []
