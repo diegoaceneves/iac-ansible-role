@@ -8,8 +8,8 @@ jobs:
   linter:
     strategy:
       matrix:
-        python-version: [3.7, 3.9, "3.10.x"]
-    runs-on: ubuntu-22.04
+        python-version: [3.7, 3.9]
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
@@ -26,8 +26,8 @@ jobs:
   molecule:
     strategy:
       matrix:
-        python-version: [3.7, 3.9, "3.10.x"]
-    runs-on: ubuntu-22.04
+        python-version: [3.7, 3.9]
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
