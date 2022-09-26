@@ -2,5 +2,7 @@
 # vars file for iac_ansible_role
 packages:
 - apache2
+- apache2-bin
+- apache2-utils
 - git
-
+- ssl-cert
