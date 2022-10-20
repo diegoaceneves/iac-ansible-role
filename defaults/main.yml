@@ -4,4 +4,4 @@ GITREPO: https://github.com/diegoaceneves/iac-software.git
 SITEPATH: /var/www/html
 HTTPUSER: www-data
 HTTPGROUP: www-data
-GITVERSION: v1.0.0
+GITVERSION: v1.0.3
